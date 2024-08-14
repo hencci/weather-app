@@ -1,0 +1,53 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1776f2;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+#weatherContainer {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #1776f2;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(31, 116, 228, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#currentWeather {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#currentWeather h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #0af043;
+}
+
+#currentWeather h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #042e5e;
+}
+
+#currentWeather p {
+    margin: 0;
+}
+
+#additionalInfo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
