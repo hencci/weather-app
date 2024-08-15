@@ -51,3 +51,60 @@ body {
     justify-content: space-between;
     margin-top: 20px;
 }
+
+#additionalInfo p {
+    font-size: 18px;
+    color: #dcdde1;
+}
+
+#forecast {
+    width: 100%;
+    margin-top: 30px;
+}
+
+#forecast h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: left;
+    width: 100%;
+}
+
+#loading {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #d2eaf6;
+}
+
+.hidden {
+    display: none;
+}
+
+#weatherForm {
+    display: flex;
+    gap: 1px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#weatherForm input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    width: 250px;
+    outline: none;
+}
+
+#weatherForm button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    background-color: #4cd137;
+    color: white;
+    cursor: pointer;
+}
+
+#weatherForm button:hover {
+    background-color: #3ca02a;
+}
