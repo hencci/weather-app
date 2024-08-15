@@ -3,4 +3,7 @@ function fetchWeather(location) {
     const loadingDiv = document.getElementById('loading');
 
     loadingDiv.classList.remove('hidden');
+
+    fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${location}?key=DBELFYET2HB66AN6SZC56BC6M`, { mode: 'cors' })
+        
 }
