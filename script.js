@@ -1,3 +1,14 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const defaultCity = 'Lagos';
+    fetchWeather(defaultCity);
+
+    document.getElementById('weatherForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const location = document.getElementById('location').value;
+        fetchWeather(location);
+    });
+});
+
 function fetchWeather(location) {
     const weatherInfoDiv = document.getElementById('weatherContainer');
     const loadingDiv = document.getElementById('loading');
