@@ -35,6 +35,19 @@ function fetchWeather(location) {
         document.getElementById('humidity').textContent = `${humidity} %`;
         document.getElementById('chanceOfRain').textContent = `${chanceOfRain} %`;
         document.getElementById('windSpeed').textContent = `${windSpeed} km/h`;
+
+        const dailyForecastDiv = document.getElementById('dailyForecast');
+        dailyForecastDiv.innerHTML = '';
+
+        data.days.slice(1, 8).forEach(function(day) {
+            const dayDiv = document.createElement('div');
+            dayDiv.innerHTML = `
+                <p><strong>${formatDay(day.datetime)}</strong></p>
+                <p class="max-temp">${fahrenheitToCelsius(day.tempmax)} °C</p>
+                <p class="min-temp">${fahrenheitToCelsius(day.tempmin)} °C</p>
+            `;
+            dailyForecastDiv.appendChild(dayDiv);
+        });
     })
 }
 
