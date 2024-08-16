@@ -48,6 +48,8 @@ function fetchWeather(location) {
             `;
             dailyForecastDiv.appendChild(dayDiv);
         });
+
+        loadingDiv.classList.add('hidden');
     })
 }
 
