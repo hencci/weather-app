@@ -43,18 +43,23 @@ body {
 
 #currentWeather p {
     margin: 0;
+    font-size: 2rem;
 }
 
 #additionalInfo {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 20px;
 }
 
 #additionalInfo p {
     font-size: 18px;
     color: #dcdde1;
+    background-color: #3d3d3d;
+    padding: 8px;
+    border-radius: 10px;
+    text-align: center;
 }
 
 #forecast {
@@ -107,4 +112,24 @@ body {
 
 #weatherForm button:hover {
     background-color: #3ca02a;
+}
+
+#dailyForecast {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+#dailyForecast div {
+    background-color: #3d3d3d;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+#dailyForecast p {
+    margin: 5px 0;
+    font-size: 16px;
 }
