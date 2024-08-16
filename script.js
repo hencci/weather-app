@@ -37,3 +37,12 @@ function fetchWeather(location) {
         document.getElementById('windSpeed').textContent = `${windSpeed} km/h`;
     })
 }
+
+function fahrenheitToCelsius(fahrenheit) {
+    return ((fahrenheit - 32) * 5 / 9).toFixed(0);
+}
+
+function formatDay(datetime) {
+    const date = new Date(datetime);
+    return date.toLocaleDateString(undefined, { weekday: 'long' });
+}
