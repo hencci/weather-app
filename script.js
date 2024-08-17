@@ -51,6 +51,12 @@ function fetchWeather(location) {
 
         loadingDiv.classList.add('hidden');
     })
+    .catch(function(error) {
+        weatherInfoDiv.innerHTML = `<p>Error fetching the weather data. Locatio does not exist.</p>`;
+        console.error( error);
+        // Hide the loading text
+        loadingDiv.classList.add('hidden');
+    })
 }
 
 function fahrenheitToCelsius(fahrenheit) {
