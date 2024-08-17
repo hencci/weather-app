@@ -129,3 +129,7 @@ body {
     margin: 5px 0;
     font-size: 16px;
 }
+
+.errorMessage {
+    color: rgb(115, 5, 5);
+}
