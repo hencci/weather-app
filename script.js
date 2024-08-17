@@ -53,6 +53,7 @@ function fetchWeather(location) {
     })
     .catch(function(error) {
         weatherInfoDiv.innerHTML = `<p>Error fetching the weather data. Locatio does not exist.</p>`;
+        weatherInfoDiv.classList.add('errorMessage');
         console.error( error);
         // Hide the loading text
         loadingDiv.classList.add('hidden');
